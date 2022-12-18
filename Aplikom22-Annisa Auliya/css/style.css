@@ -1,0 +1,246 @@
+* {
+  font-family: "Rubik", sans-serif;
+  color: black;
+}
+
+body {
+  background-color: rgb(245, 219, 164);
+  margin: 0;
+}
+.header {
+  background-color: #cc9b3f;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 6%;
+  padding: 15px 5px;
+  font-weight: 600;
+}
+.header div {
+  display: inline-block;
+}
+.navbar {
+  float: right;
+}
+.navbar div {
+  margin: 0 10px 0 0;
+}
+.navbar a {
+  text-decoration: none;
+  cursor: default;
+}
+/*Main*/
+.main {
+  width: 100%;
+  margin-top: 100px;
+}
+/*Hero*/
+.hero {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 65% 35%;
+  font-size: 72px;
+  font-weight: 600;
+}
+.hello div {
+  font-weight: normal;
+  font-size: 60px;
+  padding-top: 2%;
+}
+.hello a {
+  cursor: default;
+}
+.hero .desc {
+  margin-top: 0px;
+  font-size: 20px;
+}
+.line {
+  width: 20%;
+  background-color: #030303;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+.hero .image img {
+  border-radius: 15%;
+  height: 420px;
+}
+.contact {
+  margin-top: 10px;
+}
+.contact iconify-icon {
+  margin-right: 0 5px 0 0;
+}
+.contact a {
+  color: rgb(245, 219, 164);
+  cursor: default;
+}
+.contact a:active {
+  color: rgb(245, 219, 164);
+}
+.contact a:visited {
+  color: rgb(245, 219, 164);
+}
+.hero button {
+  margin-top: 30px;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 16px;
+  background-color: rgb(114, 77, 21);
+  color: #f7f7f7;
+  border: 2px solid rgb(144, 77, 21);
+  width: 50%;
+}
+/* ABOUT */
+.about {
+  margin-top: 5%;
+  background-color: rgb(114, 77, 21);
+  padding: 60px 20px;
+  cursor: default;
+  display: grid;
+  grid-template-columns: 30% auto;
+  font-size: 20px;
+}
+.about .image img {
+  height: 300px;
+  border-radius: 15%;
+  margin: 0;
+  /* margin-right: 20%; */
+}
+.hobi table {
+  margin: 0;
+}
+.hobi table td {
+  width: 100px;
+  text-align: left;
+}
+/* PENDIDIKAN */
+.edu {
+  padding: 40px 20px;
+  font-size: 20px;
+}
+.edu table tr td {
+  text-align: center;
+  padding: 50px;
+}
+.edu table tr td p {
+  margin: 0;
+}
+.edu-content {
+  display: grid;
+  grid-template-columns: 60% auto;
+  margin-top: 20px;
+}
+.edu-content .image img,
+.hobby-content .image img {
+  height: 300px;
+  margin: 0;
+}
+/* Hobby */
+.hobi-content {
+  display: grid;
+  grid-template-columns: 50% auto;
+  margin-top: 20px;
+}
+.hobi {
+  background-color: rgb(114, 77, 21);
+  padding: 40px 20px;
+  color: #ffffff;
+  font-size: 20px;
+}
+.hobi-content .image img {
+  height: 350px;
+  border-radius: 15%;
+  margin: 0;
+}
+.hobi h2,
+.hobi table tr td {
+  color: #ffffff;
+}
+.hobi-content table {
+  width: 80%;
+}
+.bar {
+  margin: 10px 0 0 0;
+  border-radius: 15px;
+  width: 100%;
+  background-color: #393e46;
+}
+.hobi-bar {
+  border-radius: 15px;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+}
+.hobi-bar.membaca {
+  width: 60%;
+}
+.hobi-bar.berenang{
+  width: 80%;
+}
+.hobi-bar.menonton{
+   width: 60%;
+}
+.rangkuman {
+  padding: 40px 20px;
+  font-size: 20px;
+}
+.rangkuman table tr td {
+  text-align: justify;
+  padding: 50px;
+}
+
+.rangkuman-content {
+  display: inline;
+  grid-template-columns: 60% auto;
+  margin-top: 20px;
+}
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+  .header {
+    height: 20px;
+    width: 100%;
+    font-size: 18px;
+    position: fixed;
+    vertical-align: middle;
+  }
+  .main {
+    margin-top: 40px;
+  }
+  .navbar {
+    padding: 4px 0 0 0;
+    font-size: 14px;
+    font-weight: normal;
+  }
+  .hero,
+  .about,
+  .edu-content,
+  .hobby-content {
+    grid-template-columns: none;
+    grid-template-rows: repeat(2, auto);
+  }
+  .hero .image {
+    grid-row-start: 1;
+  }
+  .hero .image img {
+    height: 300px;
+    display: none;
+  }
+  .hello div {
+    font-size: 30px;
+  }
+  .hero .desc {
+    font-size: 18px;
+  }
+  .edu table tr td {
+    padding: 8px;
+  }
+
+  .edu-content .image img {
+    height: 200px;
+  }
+  .hobby-content .image img {
+    height: 200px;
+  }
+  .edu table tr td {
+    padding: 8px;
+  }
+}
